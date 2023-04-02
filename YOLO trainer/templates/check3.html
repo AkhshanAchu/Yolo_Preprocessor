@@ -1,0 +1,156 @@
+<html><head><title>Download Page</title></head></html>
+<style>
+    
+
+    body{
+        background-image: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,17,121,1) 35%, rgba(0,212,255,1) 100%);
+        background-position: center;
+        background-origin: content-box;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height:100vh;
+        font-family: 'Noto Sans', sans-serif;
+    }
+    .text-center{
+        color:#fff;	
+        text-transform:uppercase;
+        font-size: 23px;
+        margin: -50px 0 80px 0;
+        display: block;
+        text-align: center;
+    }
+    .box{
+        position:absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+        background-color: rgba(0, 0, 0, 0.89);
+        border-radius:3px;
+        padding:70px 100px;
+    }
+    .input-container{
+        position:relative;
+        margin-bottom:25px;
+    }
+    .input-container label{
+        position:absolute;
+        top:0px;
+        left:0px;
+        font-size:16px;
+        color:#fff;	
+        pointer-event:none;
+        transition: all 0.5s ease-in-out;
+    }
+    .input-container input{ 
+      border:0;
+      border-bottom:1px solid #555;  
+      background:transparent;
+      width:100%;
+      padding:8px 0 5px 0;
+      font-size:16px;
+      color:#fff;
+    }
+    .input-container input:focus{ 
+     border:none;	
+     outline:none;
+     border-bottom:1px solid #e74c3c;	
+    }
+    .btn{
+        color:#fff;
+        background-color:#e74c3c;
+        outline: none;
+        border: 0;
+        color: #fff;
+        padding:10px 20px;
+        text-transform:uppercase;
+        margin-top:50px;
+        border-radius:2px;
+        cursor:pointer;
+        position:relative;
+    }
+    /*.btn:after{
+        content:"";
+        position:absolute;
+        background:rgba(0,0,0,0.50);
+        top:0;
+        right:0;
+        width:100%;
+        height:100%;
+    }*/
+    label {
+      color: #ffffff;
+      font-weight: bold;
+      display: block;
+    }
+    .input-container input:focus ~ label,
+    .input-container input:valid ~ label{
+        top:-12px;
+        font-size:12px;
+        
+    }
+
+.button-21 {
+  align-items: center;
+  appearance: none;
+  background-color: #3EB2FD;
+  background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+  background-size: calc(100% + 20px) calc(100% + 20px);
+  border-radius: 100px;
+  border-width: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: CircularStd,sans-serif;
+  font-size: 1rem;
+  height: auto;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 6px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .2s,background-position .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.button-21:active,
+.button-21:focus {
+  outline: none;
+}
+
+.button-21:hover {
+  background-position: -20px -20px;
+}
+
+.button-21:focus:not(:active) {
+  box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+}
+
+.container {
+  background: hsla(var(--page-background), 1);
+}
+
+.container {
+  padding: 3em;
+  position: relative;
+  z-index: 1;
+}
+</style>
+
+
+
+
+<body>
+    <h3 style="color :#fff;text-align: Center;">Please download the file below ↙️</h3>
+   <div class="input-container" align="center">
+		<a href="/return-files/" target="blank"><button class='button-21'>Download!</button></a>
+   </div>
+
+   <h1 style="color :#fff;text-align: Center;">{{data}}</h1>
+</body>

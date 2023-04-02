@@ -1,0 +1,22 @@
+<html>
+
+<body>
+
+<form action="/predict" method="Post">
+    <label for="yolo">Choose a Model:</label>
+    <select id="yolo" name="yolo">
+      <option value="5">YOLOv5</option>
+      <option value="7">YOLOv7</option>
+    </select>
+<br />
+<label for="classes">Classes  :</label><br>
+  <input type="text" id="classes" name="classes">
+
+<label for="train">Train_split  :</label><br>
+  <input type="text" id="train" name="train">
+<input type="submit" />
+</form>
+
+</body>
+
+</html>
